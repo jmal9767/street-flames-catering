@@ -1,115 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Street Flames Catering | If You Book Cook</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Street Flames catering. Bold flavor, street soul, and good food that brings people together.">
+  <title>Street Flames — Bold Flavor. Street Soul.</title>
+  <link rel="icon" href="./assets/street-flames-logo.jpeg" type="image/jpeg">
+  <link rel="preload" href="./assets/display.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 </head>
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <div class="logo-placeholder">STREET<br>FLAMES</div>
-      <h1>STREET FLAMES</h1>
-      <p class="tagline">If You Book Cook</p>
-      <p class="subtitle">Bold Flavor. Street Soul. Good Food. Real Flavor.</p>
-      <a href="#book" class="cta-btn">Book Your Event</a>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="wordmark" href="#top" aria-label="Street Flames, home">STREET <span>FLAMES</span><small>CATERING</small></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" type="button"><span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#about">The flavor</a>
+        <a href="#occasions">The occasions</a>
+        <a class="nav-cta" href="#street-soul">The Street Flames spirit <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
   </header>
-
-  <section id="about" class="section">
-    <h2>Catering with Fire</h2>
-    <p>Street Flames brings bold, flame-kissed flavors to events across the Bay Area. From intimate gatherings to large parties, we set up and serve with soul. Pricing depends on how many people and the type of menu. Deposit 50% one week prior — balance due at setup.</p>
-  </section>
-
-  <section id="packages" class="section">
-    <h2>Sample Packages</h2>
-    <p style="text-align:center; margin-bottom:2rem;">Every event is different. Pricing varies by guest count, menu type, and setup needs. 50% deposit one week prior, balance due at setup.</p>
-    <div class="packages">
-      <div class="package">
-        <h3>Street Flame Express</h3>
-        <p class="price">Varies</p>
-        <p>Drop-off or light setup. BBQ / street food platters. Ideal for 15–40 guests.</p>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true" class="little-rule"></span> CATERING WITH STREET SOUL</p>
+        <h1 id="hero-title">GOOD FOOD.<br>REAL <em>FLAVOR.</em></h1>
+        <p class="hero-description">Bring your people.<br>We’ll bring the flavor.</p>
+        <p class="hero-intro">Meet Street Flames. Catering with a bold personality and a whole lot of soul.</p>
+        <a class="button" href="#occasions">Find your occasion <svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8"/></svg></a>
       </div>
-      <div class="package">
-        <h3>Full Flame Service</h3>
-        <p class="price">Varies</p>
-        <p>On-site setup, flame-grilled service, staffing. Great for 30–100+ guests.</p>
+      <figure class="hero-art">
+        <img src="./assets/street-flames-logo.jpeg" alt="Street Flame logo: a city skyline surrounded by orange and red flames, white Street lettering, orange Flame lettering, and crossed cooking utensils." width="1254" height="1254" fetchpriority="high">
+        <figcaption><span>BOLD FLAVOR.</span><span>STREET SOUL.</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span>GOOD FOOD BRINGS PEOPLE TOGETHER.</span><a href="#about">Get to know us <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="brand-strip" aria-hidden="true"><div><span>BOLD FLAVOR</span><b>✳</b><span>STREET SOUL</span><b>✳</b><span>GOOD FOOD</span><b>✳</b><span>REAL FLAVOR</span><b>✳</b></div></div>
+    <section class="about wrap section-space" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / THE FLAVOR</span><span class="small-tag">UNMISTAKABLY STREET FLAMES</span></div>
+      <div class="about-grid">
+        <h2 id="about-title">MORE THAN<br>A MEAL.<br><span class="outline-text">A MOMENT.</span></h2>
+        <div class="about-copy"><span class="accent-rule" aria-hidden="true"></span><p class="lead">The best gatherings always end up around the food.</p><p>The shared plates. The second helpings. The conversations that keep going long after everyone’s eaten.</p><p>That’s the spirit of Street Flames: food with personality, people at the center, and a good reason to come together.</p><p class="signature">BOLD FLAVOR. STREET SOUL.</p></div>
       </div>
-      <div class="package">
-        <h3>Custom Flame Event</h3>
-        <p class="price">Custom Quote</p>
-        <p>Large parties, unique menus, or premium additions. We’ll build it with you.</p>
+    </section>
+    <section class="occasions section-space" id="occasions" aria-labelledby="occasions-title">
+      <div class="wrap">
+        <div class="section-label"><span>02 / THE OCCASIONS</span><span class="small-tag">MAKE IT A GATHERING</span></div>
+        <div class="occasions-heading"><h2 id="occasions-title">YOUR PEOPLE.<br><span class="orange-text">YOUR OCCASION.</span></h2><p>Big milestones. Small get-togethers.<br>Good food belongs at both.</p></div>
+        <div class="occasion-list">
+          <article class="occasion"><span class="occasion-number">01</span><h3>CELEBRATE<br>SOMETHING.</h3><div><p class="occasion-category">Birthdays & milestones</p><p>Another year. A new chapter. A moment worth bringing everyone together for.</p></div><span class="occasion-mark" aria-hidden="true">✳</span></article>
+          <article class="occasion"><span class="occasion-number">02</span><h3>FEED THE<br>WHOLE TEAM.</h3><div><p class="occasion-category">Work & team gatherings</p><p>Step away from the everyday. Give your team something good to gather around.</p></div><span class="occasion-mark" aria-hidden="true">✳</span></article>
+          <article class="occasion"><span class="occasion-number">03</span><h3>JUST BRING<br>YOUR PEOPLE.</h3><div><p class="occasion-category">Family & friends</p><p>A reunion, a weekend gathering, or just because. The company is reason enough.</p></div><span class="occasion-mark" aria-hidden="true">✳</span></article>
+        </div>
       </div>
-    </div>
-    <p class="note">Final price confirmed after guest count + menu. Minimums may apply for smaller events.</p>
-  </section>
-
-  <section id="gallery" class="section">
-    <h2>Our Flame</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop" alt="Grilled food" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop" alt="Pizza from oven" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop" alt="Gourmet plate" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop" alt="Restaurant table" loading="lazy">
-    </div>
-    <p class="note">Add your own pictures via GitHub or replace these Unsplash links.</p>
-  </section>
-
-  <section id="book" class="section book-section">
-    <h2>Book Now</h2>
-    <p>Request your event date. 50% deposit one week prior, rest at setup. Pricing varies by guests and menu.</p>
-    <div class="booking-card">
-      <h3>Street Flames Catering Event</h3>
-      <p>2-hour setup & service. Pricing depends on number of people and type of menu.</p>
-      <p class="phrase">If You Book Cook</p>
-      <p class="small">50% deposit one week prior, balance due at setup.</p>
-      <form id="inquiry" class="inquiry-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="date" name="date" required>
-        <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
-        <select name="menu" required>
-          <option value="" disabled selected>Select Menu Type</option>
-          <option value="bbq">BBQ / Flame Grilled</option>
-          <option value="street">Street Food Mix</option>
-          <option value="custom">Custom Menu</option>
-          <option value="other">Other (describe below)</option>
-        </select>
-        <textarea name="details" placeholder="Event details, menu ideas..." rows="3"></textarea>
-        <button type="submit" class="cta-btn">Request Booking</button>
-      </form>
-      <div id="form-message"></div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Street Flames Catering &mdash; If You Book Cook</p>
-    <p>Bay Area &bull; <a href="admin.html">Admin</a></p>
+    </section>
+    <section class="spirit section-space" id="street-soul" aria-labelledby="spirit-title">
+      <div class="wrap spirit-inner">
+        <p class="eyebrow">THE STREET FLAMES SPIRIT</p>
+        <h2 id="spirit-title">COME HUNGRY.<br>LEAVE <em>HAPPY.</em></h2>
+        <div class="spirit-bottom"><p>For the food. For the company.<br>For the moments you’ll talk about later.</p><p class="spirit-signoff">GOOD FOOD.<br>REAL FLAVOR.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <div class="footer-top"><a class="wordmark" href="#top" aria-label="Street Flames, back to top">STREET <span>FLAMES</span><small>CATERING</small></a><p>Bold flavor. Street soul.</p><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Street Flames. All rights reserved.</span><span>GOOD FOOD. REAL FLAVOR.</span></div>
   </footer>
-
-  <script>
-    document.getElementById('inquiry').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = this;
-      const data = {
-        name: form.name.value,
-        email: form.email.value,
-        date: form.date.value,
-        guests: form.guests.value,
-        menu: form.menu.value,
-        details: form.details.value,
-        time: new Date().toLocaleString()
-      };
-      const existing = JSON.parse(localStorage.getItem('streetflames_requests') || '[]');
-      existing.unshift(data);
-      localStorage.setItem('streetflames_requests', JSON.stringify(existing));
-
-      const msg = document.getElementById('form-message');
-      msg.textContent = 'Request received! We\'ll confirm availability and send deposit details (50% one week prior).';
-      msg.style.color = '#d4af37';
-      form.reset();
-    });
-  </script>
 </body>
 </html>
